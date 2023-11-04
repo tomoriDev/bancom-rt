@@ -45,8 +45,13 @@ $bancom-challengue-accent: mat.define-palette(
 
 $bancom-challengue-warn: mat.define-palette(mat.$red-palette);
 
+$custom-typography: mat.define-typography-config(
+  $font-family: 'sans-serif',
+);
+
 $bancom-challengue-theme: mat.define-light-theme(
   (
+    typography: $custom-typography,
     color: (
       primary: $bancom-challengue-primary,
       accent: $bancom-challengue-accent,

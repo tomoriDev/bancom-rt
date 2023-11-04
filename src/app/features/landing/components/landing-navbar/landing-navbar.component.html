@@ -1,0 +1,59 @@
+<nav class="navbar justify-between align-center">
+  <img
+    class="navbar__logo"
+    ngSrc="assets/svg/logo.svg"
+    [width]="128"
+    [height]="32"
+    alt="logo"
+    priority
+  />
+  <section class="navbar__items d-flex align-center">
+    <a href="/features">Features</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/careers">Careers</a>
+    <a href="/help">Ayuda</a>
+  </section>
+
+  <section class="d-flex align-center">
+    <div class="navbar__buttons d-flex align-center">
+      <app-core-button
+        [text]="'Iniciar sesión'"
+        [variant]="'primary'"
+      ></app-core-button>
+
+      <app-core-button
+        [text]="'Regístrate'"
+        [variant]="'secondary'"
+      ></app-core-button>
+    </div>
+    <button class="navbar__hamburguer" (click)="toggle()">
+      <img
+        ngSrc="assets/svg/menu-icon.svg"
+        [width]="32"
+        [height]="32"
+        alt="logo"
+      />
+    </button>
+  </section>
+</nav>
+
+<nav class="navbar__menu" [ngClass]="{ open: isMenuOpen }">
+  <section class="navbar__menu-items d-flex align-center">
+    <a href="/features">Features</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/careers">Careers</a>
+    <a href="/help">Ayuda</a>
+  </section>
+
+  <section class="navbar__menu-buttons d-flex align-center">
+    <app-core-button
+      [text]="'Iniciar sesión'"
+      [variant]="'primary'"
+    ></app-core-button>
+
+    <app-core-button
+      [text]="'Regístrate'"
+      [variant]="'secondary'"
+    ></app-core-button>
+  </section>
+</nav>

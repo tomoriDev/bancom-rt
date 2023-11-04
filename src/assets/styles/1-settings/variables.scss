@@ -1,0 +1,28 @@
+$primary-color: #7c3aed;
+$secondary-color: #ede9fe;
+$text-color: #111827;
+$background-color: #f5f5f5;
+
+// Tamaños
+$font-size-base: 16px;
+$heading-font-size: 24px;
+$button-padding: 12px 20px;
+
+// Espaciado
+$spacing-unit: 8px;
+$margin-small: $spacing-unit;
+$margin-medium: $spacing-unit * 2;
+$margin-large: $spacing-unit * 3;
+
+// Otros
+$border-radius: 4px;
+
+// Z-index
+$z-index-dropdown: 1000;
+$z-index-modal: 2000;
+
+// Fuentes
+$font-family: 'Inter, sans-serif';
+
+// Otros ajustes
+$body-background: $background-color;
