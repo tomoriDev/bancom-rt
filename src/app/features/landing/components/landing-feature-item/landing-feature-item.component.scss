@@ -1,0 +1,40 @@
+@import 'breakpoints';
+
+.feature {
+  width: 384px;
+  min-height: auto;
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 24px;
+  }
+
+  &__description {
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+  .feature {
+    width: 329px;
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .feature {
+    width: 335px;
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 24px;
+    }
+  }
+}

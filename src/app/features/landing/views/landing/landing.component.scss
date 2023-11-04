@@ -67,7 +67,116 @@
       margin-top: 100px;
       display: flex;
       justify-content: center;
+      width: 95%;
+    }
+  }
+}
+
+.landing__features {
+  width: 100%;
+  text-align: center;
+  margin-top: 164px;
+  margin-bottom: 94px;
+  &-title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  &-description {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 800px;
+    margin-top: 12px;
+  }
+  &-container {
+    margin-top: 64px;
+    max-width: 1250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 30px;
+    justify-content: space-evenly;
+  }
+}
+
+.landing__achievements {
+  width: 100%;
+  margin-top: 164px;
+  margin-bottom: 94px;
+  display: flex;
+  justify-content: space-evenly;
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    gap: 64px 30px;
+  }
+  &-text {
+    max-width: 592px;
+    margin-left: 72px;
+  }
+  &-title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  &-description {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+  .landing__achievements {
+    width: 100%;
+    margin-top: 164px;
+    margin-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    &-text {
+      margin-left: 40px;
+    }
+    &-container {
+      margin-top: 48px;
+      display: flex;
+      flex-wrap: wrap;
       width: 100%;
+      gap: 40px 12px;
+      justify-content: space-evenly;
+    }
+    &-title {
+      font-size: 36px;
+      font-weight: 700;
+    }
+    &-description {
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .landing__achievements {
+    &-text {
+      margin-left: 20px;
+    }
+    &-container {
+      margin-left: 20px;
+      margin-top: 48px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px 32px;
+      justify-content: left;
+      width: auto;
+    }
+    &-title {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    &-description {
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 12px;
     }
   }
 }

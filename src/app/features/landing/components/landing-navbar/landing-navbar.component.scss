@@ -33,6 +33,12 @@
       color: $primary-color;
     }
   }
+
+  &__buttons {
+    width: 320px;
+    margin: 4px 16px;
+    gap: 10%;
+  }
 }
 
 .navbar__hamburguer {
@@ -56,7 +62,8 @@
 
   .navbar__menu {
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 5px 5px #ccc;
     width: 100%;
     &-items {
       display: flex;
@@ -74,6 +81,7 @@
     }
     &-buttons {
       display: none;
+      padding-bottom: 24px;
     }
   }
 }
@@ -97,6 +105,7 @@
       margin-top: 20px;
       display: flex;
       justify-content: center;
+      gap: 10%;
     }
   }
 }

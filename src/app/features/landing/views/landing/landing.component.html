@@ -5,7 +5,7 @@
       From the small stuff to the big picture, organizes the work so teams know
       what to do, why it matters, and how to get it done.
     </p>
-    <p class="landing__buttons">
+    <p class="landing__buttons d-flex">
       <app-core-button
         variant="primary"
         text="Get Started"
@@ -24,3 +24,42 @@
     <img src="assets/img/iphone.png" alt="iphone" width="392" height="712" />
   </section>
 </main>
+
+<section class="landing__features d-flex flex-col justify-center align-center">
+  <div class="landing__features-title">Tailor-made features</div>
+
+  <div class="landing__features-description">
+    Lorem ipsum is common placeholder text used to demonstrate the graphic
+    elements of a document or visual presentation.
+  </div>
+
+  <div class="landing__features-container">
+    <app-landing-feature-item
+      *ngFor="let item of features"
+      [img]="item.image"
+      [title]="item.title"
+      [description]="item.description"
+    ></app-landing-feature-item>
+  </div>
+</section>
+
+<section class="landing__achievements d-flex">
+  <div class="landing__achievements-text">
+    <div class="landing__achievements-title">
+      Our 18 years of achievements
+    </div>
+
+    <div class="landing__achievements-description">
+      With our super powers we have reached this
+    </div>
+  </div>
+
+  <div class="landing__achievements-container">
+    <app-landing-achievment-item
+      *ngFor="let item of achievements"
+      [img]="item.image"
+      [title]="item.title"
+      [description]="item.description"
+    ></app-landing-achievment-item>
+  </div>
+</section>
