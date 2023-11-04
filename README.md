@@ -1,27 +1,37 @@
-# BancomChallengue
+# Reto Técnico para BANCOM - Proyecto Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+Este repositorio contiene mi solución para el reto técnico propuesto por Bancom. El objetivo de este proyecto es demostrar mis habilidades en el desarrollo de aplicaciones web utilizando Angular.
 
-## Development server
+## Descripción del Proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+El proyecto consta en replicar un landing, con autorizaciones y una funcionalidad con un usuario logeado. El proyecto está modularizado para mejorar el performance de la misma. Se está aplicando un scaffolding standard para cubrir todos los requerimientos pero sin dejar de ser mantenible, entendible y muy escalable.
 
-## Code scaffolding
+## Tecnologías Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 16.2.9
 
-## Build
+## Instalación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Asegúrate de tener Angular CLI instalado. Si no lo tienes, puedes instalarlo con el siguiente comando:
 
-## Running unit tests
+npm install -g @angular/cli
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Luego, clona este repositorio y sigue estos pasos:
 
-## Running end-to-end tests
+1. Abre una terminal en la carpeta del proyecto.
+2. Instala las dependencias con el siguiente comando:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+npm install
 
-## Further help
+3. Inicia la aplicación localmente con:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+npm run start
+
+La aplicación estará disponible en http://localhost:4200/.
+
+## Contacto
+
+Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo: carlostm320@gmail.com
+
+---
+Ingenia, crea y triunfa con Angular 🚀
