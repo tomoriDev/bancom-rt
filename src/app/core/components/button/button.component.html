@@ -1,1 +1,14 @@
-<button class="core-button" [class]="variant">{{ text }}</button>
+<button
+  class="core-button align-center"
+  [class]="variant"
+  [style.height]="height +'px'"
+>
+  <img
+    src="assets/svg/play-circle.svg"
+    alt="button-icon"
+    *ngIf="icon"
+    width="24"
+    height="24"
+  />
+  {{ text }}
+</button>

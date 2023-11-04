@@ -1,1 +1,26 @@
-<p>landing works!</p>
+<main class="d-flex landing">
+  <section class="d-flex flex-col landing__actions">
+    <p class="landing__headline">The easiest way to manage projects</p>
+    <p class="landing__subtitle">
+      From the small stuff to the big picture, organizes the work so teams know
+      what to do, why it matters, and how to get it done.
+    </p>
+    <p class="landing__buttons">
+      <app-core-button
+        variant="primary"
+        text="Get Started"
+        [height]="56"
+      ></app-core-button>
+      <app-core-button
+        variant="text"
+        text="Watch Video"
+        icon="assets/svg/play-circle.svg"
+        [height]="56"
+      ></app-core-button>
+    </p>
+  </section>
+
+  <section class="d-flex landing__image">
+    <img src="assets/img/iphone.png" alt="iphone" width="392" height="712" />
+  </section>
+</main>

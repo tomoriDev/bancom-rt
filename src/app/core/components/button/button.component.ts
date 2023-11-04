@@ -9,4 +9,6 @@ import { TButton } from '../../interfaces/button.type';
 export class ButtonComponent {
   @Input({ required: true }) variant: TButton = 'text';
   @Input({ required: true }) text: string = '';
+  @Input() icon: string = '';
+  @Input() height: number = 48;
 }

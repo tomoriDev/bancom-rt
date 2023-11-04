@@ -1,0 +1,22 @@
+@import 'breakpoints';
+
+.landing-layout {
+  background-image: url('/assets/img/bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+  .landing-layout {
+    background-position: top right;
+    background-size: 100% 1240px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .landing-layout {
+    background-position: top right;
+    background-size: 100% 1240px;
+  }
+}

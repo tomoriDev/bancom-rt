@@ -4,10 +4,11 @@
 .core-button {
   border-radius: 8px;
   border: none;
-  height: 48px;
-  padding: 12px 20px;
+  padding: 0 20px;
   font-weight: 500;
   margin: 4px 16px;
+  display: inline-flex;
+  width: auto;
 
   &.primary {
     background-color: $primary-color;
@@ -26,5 +27,9 @@
 
   &:hover {
     cursor: pointer;
+  }
+
+  & img {
+    margin-right: 8px;
   }
 }

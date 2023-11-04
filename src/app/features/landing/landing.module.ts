@@ -8,6 +8,7 @@ import { LandingFooterComponent } from './components/landing-footer/landing-foot
 import { LandingFeatureItemComponent } from './components/landing-feature-item/landing-feature-item.component';
 import { LandingAchievmentItemComponent } from './components/landing-achievment-item/landing-achievment-item.component';
 import { NgOptimizedImage } from '@angular/common';
+import { CoreComponentsModule } from 'src/app/core/components/core-components.module';
 @NgModule({
   declarations: [
     LandingComponent,
@@ -16,7 +17,12 @@ import { NgOptimizedImage } from '@angular/common';
     LandingFeatureItemComponent,
     LandingAchievmentItemComponent,
   ],
-  imports: [CommonModule, LandingRoutingModule, LandingNavbarComponent],
+  imports: [
+    CommonModule,
+    LandingRoutingModule,
+    LandingNavbarComponent,
+    CoreComponentsModule,
+  ],
   providers: [NgOptimizedImage],
 })
 export class LandingModule {}

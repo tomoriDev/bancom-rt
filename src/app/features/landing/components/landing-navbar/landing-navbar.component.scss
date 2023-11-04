@@ -41,7 +41,8 @@
 
 .navbar__menu {
   opacity: 0;
-  transition: opacity 0.1s ease; /* Transición de opacidad de 0.3 segundos con efecto suave */
+  position: absolute;
+  transition: opacity 0.2s ease; /* Transición de opacidad de 0.3 segundos con efecto suave */
 }
 
 @media screen and (max-width: $breakpoint-lg) {
@@ -54,10 +55,9 @@
   }
 
   .navbar__menu {
-    position: absolute;
-    background-color: #ccc;
-    width: 100vw;
-    padding-bottom: 16px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    width: 100%;
     &-items {
       display: flex;
       flex-direction: column;
