@@ -11,7 +11,7 @@ export class SessionService {
 
   router = inject(Router);
 
-  setSessionCountdown(): Observable<string> {
+  initSessionCountdown(): Observable<string> {
     return timer(0, 1000).pipe(
       take(this.timeRemainingInSeconds + 1),
       map((time) => this.timeRemainingInSeconds - time),
