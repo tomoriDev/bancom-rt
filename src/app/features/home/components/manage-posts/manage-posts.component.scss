@@ -1,0 +1,26 @@
+.container-posts {
+  width: 80vw;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  &--center {
+    justify-content: center;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 16.1px;
+    margin-top: 4px;
+  }
+  &__item {
+    margin-bottom: 20px;
+    max-width: 70%;
+  }
+  &__button {
+    width: 30%;
+  }
+}

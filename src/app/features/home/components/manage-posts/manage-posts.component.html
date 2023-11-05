@@ -1,0 +1,21 @@
+<div
+  class="container-posts"
+  [ngClass]="{ 'container-posts--center': (rowData?.posts)!.length === 0 }"
+>
+  <section *ngIf="(rowData?.posts)!.length > 0">
+    <div class="container-posts__item" *ngFor="let post of rowData?.posts">
+      <div class="container-posts__title">{{ post.title }}</div>
+      <div class="container-posts__description">{{ post.description }}</div>
+    </div>
+  </section>
+
+  <section class="container-posts__button">
+    <app-core-button
+      text="Crear un post"
+      variant="primary"
+      [height]="40"
+      (click)="openModal()"
+      [fullWidth]="false"
+    ></app-core-button>
+  </section>
+</div>

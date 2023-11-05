@@ -1,0 +1,36 @@
+<div class="modal">
+  <div class="modal__title">Crear post</div>
+
+  <form class="modal__form" [formGroup]="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Título</mat-label>
+      <input matInput formControlName="title" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" fullWidth class="mt-4">
+      <mat-label>Descripción</mat-label>
+      <input matInput formControlName="description" />
+    </mat-form-field>
+
+    <div class="modal__submit">
+      <div class="modal__submit-button">
+        <app-core-button
+          text="Guardar"
+          variant="primary"
+          (click)="registerPost()"
+          [fullWidth]="true"
+        ></app-core-button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="modal__close">
+  <app-core-button
+    text=""
+    icon="/assets/svg/close.svg"
+    variant="text"
+    (click)="closeModal()"
+    [fullWidth]="true"
+  ></app-core-button>
+</div>

@@ -1,0 +1,9 @@
+<div class="post__container">
+  <h1>Administración de usuarios</h1>
+  <app-table-expandable-rows
+    [columnsConfig]="columnConfig"
+    [dataSource]="(usersService.users$ | async)!"
+    (rowExpanded)="getPostsByUsers($event)"
+  >
+  </app-table-expandable-rows>
+</div>

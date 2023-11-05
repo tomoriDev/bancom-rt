@@ -1,0 +1,27 @@
+.modal {
+  position: relative;
+  padding: 100px 78px;
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__form {
+    margin-top: 42px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__submit {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    &-button {
+      width: 277px;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 0;
+  }
+}

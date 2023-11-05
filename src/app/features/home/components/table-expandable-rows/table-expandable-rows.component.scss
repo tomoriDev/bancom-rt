@@ -1,0 +1,28 @@
+.example-detail-row {
+  height: 0;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.detail-table {
+  background: #b7b7b773;
+  text-align: center;
+}
+
+.table {
+  &__header {
+    background-color: #808692 !important;
+    color: #e6e7e9;
+    text-align: center;
+  }
+  &__row {
+    text-align: center;
+  }
+}
