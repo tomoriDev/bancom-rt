@@ -3,3 +3,9 @@
 html {
   font-family: Inter, sans-serif;
 }
+
+@for $i from 12 through 48 {
+  .fs-#{$i} {
+    font-size: #{$i}px;
+  }
+}

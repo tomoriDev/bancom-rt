@@ -6,7 +6,7 @@ import { LandingComponent } from './views/landing/landing.component';
 import { LandingNavbarComponent } from './components/landing-navbar/landing-navbar.component';
 import { LandingFooterComponent } from './components/landing-footer/landing-footer.component';
 import { LandingFeatureItemComponent } from './components/landing-feature-item/landing-feature-item.component';
-import { LandingAchievmentItemComponent } from './components/landing-achievment-item/landing-achievment-item.component';
+import { LandingAchievementItemComponent } from './components/landing-achievement-item/landing-achievement-item.component';
 import { NgOptimizedImage } from '@angular/common';
 import { CoreComponentsModule } from 'src/app/core/components/core-components.module';
 @NgModule({
@@ -15,7 +15,7 @@ import { CoreComponentsModule } from 'src/app/core/components/core-components.mo
     LandingLayoutComponent,
     LandingFooterComponent,
     LandingFeatureItemComponent,
-    LandingAchievmentItemComponent,
+    LandingAchievementItemComponent,
   ],
   imports: [
     CommonModule,
