@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TButton } from '../../interfaces/button.type';
 
 @Component({
@@ -11,4 +11,6 @@ export class ButtonComponent {
   @Input({ required: true }) text: string = '';
   @Input() icon: string = '';
   @Input() height: number = 48;
+
+  @Output() click = new EventEmitter();
 }

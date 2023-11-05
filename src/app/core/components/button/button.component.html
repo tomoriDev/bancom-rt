@@ -1,7 +1,8 @@
 <button
   class="core-button align-center"
   [class]="variant"
-  [style.height]="height +'px'"
+  [style.height]="height + 'px'"
+  (click)="click.emit()"
 >
   <img
     src="assets/svg/play-circle.svg"
