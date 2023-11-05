@@ -1,0 +1,30 @@
+@import 'breakpoints';
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.navbar {
+  &__counters {
+    display: flex;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .navbar {
+    &__counters {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 12px;
+      * {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      & :last-child {
+        margin-top: -18px;
+      }
+    }
+  }
+}

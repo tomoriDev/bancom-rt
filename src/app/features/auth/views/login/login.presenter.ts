@@ -12,7 +12,7 @@ import {
 @Injectable()
 export class LoginPresenter {
   loginForm: FormGroup<ILoginForm>;
-  loading: boolean = false;
+  isLoading: boolean = false;
 
   constructor(
     private fb: FormBuilder,
@@ -35,7 +35,11 @@ export class LoginPresenter {
       return;
     }
 
-    this.loading = true;
+    if (this.isLoading) {
+      return;
+    }
+
+    this.isLoading = true;
     const request: ILoginRequest = {
       email: this.loginForm.value.email!,
       password: this.loginForm.value.password!,
@@ -43,7 +47,7 @@ export class LoginPresenter {
     this.loginService.login(request).subscribe({
       next: (value) => this.validateResponse(value),
       complete: () => {
-        this.loading = false;
+        this.isLoading = false;
       },
     });
   }

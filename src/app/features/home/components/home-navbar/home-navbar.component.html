@@ -1,0 +1,23 @@
+<mat-toolbar color="info">
+  <img
+    class="navbar__logo"
+    src="assets/svg/logo.svg"
+    [width]="128"
+    [height]="32"
+    alt="logo"
+  />
+
+  <span class="example-spacer"></span>
+
+  <div class="navbar__counters">
+    <div class="mr-3">
+      <b> RxJS counter </b>
+      {{ rxjsCounter }}
+    </div>
+    
+    <div class="ml-3">
+      <b> Signals counter </b>
+      {{ this.signalsSessionService.remainingTime }}
+    </div>
+  </div>
+</mat-toolbar>
