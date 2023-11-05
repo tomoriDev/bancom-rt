@@ -1,15 +1,14 @@
 <button
   class="core-button align-center"
   [class]="variant"
+  [ngClass]="{ fullWidth: !!fullWidth }"
   [style.height]="height + 'px'"
-  (click)="click.emit()"
+  [ngStyle]="{
+    backgroundColor: backgroundColor ?? 'auto',
+    opacity: loading ? '0.35' : '1'
+  }"
 >
-  <img
-    src="assets/svg/play-circle.svg"
-    alt="button-icon"
-    *ngIf="icon"
-    width="24"
-    height="24"
-  />
+  <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+  <img [src]="icon" alt="button-icon" *ngIf="icon" width="24" height="24" />
   {{ text }}
 </button>

@@ -2,6 +2,7 @@
 @import 'breakpoints';
 
 .core-button {
+  position: relative;
   border-radius: 8px;
   border: none;
   padding: 0 20px;
@@ -9,6 +10,11 @@
   display: inline-flex;
   width: auto;
   transition: 0.25s ease;
+  &.fullWidth {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
   &.primary {
     background-color: $primary-color;
@@ -33,6 +39,12 @@
   }
 
   & img {
-    margin-right: 8px;
+    margin-right: 12px;
   }
+}
+
+mat-progress-bar {
+  position: absolute;
+  top: 4px;
+  background-color: white;
 }

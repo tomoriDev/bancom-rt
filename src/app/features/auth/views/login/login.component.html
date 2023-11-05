@@ -1,1 +1,59 @@
-<p>login works!</p>
+<form class="login__form" [formGroup]="presenter.loginForm">
+  <div>Bienvenido</div>
+  <div class="login__title">Inicia sesión</div>
+
+  <div class="mt-8">
+    <mat-form-field appearance="outline">
+      <mat-label>Correo electrónico</mat-label>
+      <input matInput formControlName="email" />
+      <mat-error *ngIf="presenter.loginForm.controls.email">
+        {{ getEmailError() }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" fullWidth class="mt-4">
+      <mat-label>Contraseña</mat-label>
+      <input
+        matInput
+        [type]="showPassword ? 'text' : 'password'"
+        formControlName="password"
+      />
+      <mat-icon matSuffix (click)="togglePasswordVisibility()">
+        {{ showPassword ? 'visibility_off' : 'visibility' }}
+      </mat-icon>
+      <mat-error *ngIf="presenter.loginForm.controls.password">
+        {{ getPasswordError() }}
+      </mat-error>
+    </mat-form-field>
+
+    <div class="login__forgot-password">
+      <a href="#/auth"> ¿Olvidaste tu contraseña? </a>
+    </div>
+
+    <mat-checkbox class="mt-4" color="primary" formControlName="rememberEmail">
+      Recordar correo
+    </mat-checkbox>
+  </div>
+
+  <section class="d-flex flex-col login__buttons">
+    <app-core-button
+      text="Ingresar"
+      variant="primary"
+      class="mt-15"
+      [height]="50"
+      [fullWidth]="true"
+      [loading]="presenter.loading"
+      (click)="presenter.register()"
+    ></app-core-button>
+
+    <app-core-button
+      text="Ingresar con google"
+      variant="primary"
+      class="mt-4"
+      [height]="50"
+      [fullWidth]="true"
+      backgroundColor="#2D3748"
+      icon="assets/svg/google.svg"
+    ></app-core-button>
+  </section>
+</form>

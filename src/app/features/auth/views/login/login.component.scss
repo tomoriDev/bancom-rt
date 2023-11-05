@@ -1,0 +1,52 @@
+@import 'breakpoints';
+@import 'variables';
+
+.login {
+  &__form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &__forgot-password {
+    font-size: 14px;
+    text-align: right;
+    color: #2c5282;
+    a {
+      text-decoration: none;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+app-core-button {
+  width: 100%;
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .login {
+    &__form {
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+    &__title {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    &__buttons {
+      margin-top: 60%;
+    }
+  }
+}

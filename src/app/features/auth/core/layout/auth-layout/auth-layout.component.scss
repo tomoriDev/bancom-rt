@@ -1,0 +1,40 @@
+@import 'breakpoints';
+
+.auth-layout {
+  width: 100vw;
+  display: flex;
+  &__background {
+    width: 50%;
+    height: 100vh;
+    background-image: url('/assets/img/bg-auth.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .auth-layout {
+    width: 100vw;
+    display: flex;
+    &__background {
+      display: none;
+    }
+    &__container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
