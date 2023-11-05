@@ -56,12 +56,13 @@ export class LoginPresenter {
         {
           horizontalPosition: 'right',
           verticalPosition: 'top',
-          duration: 5000
+          duration: 5000,
         }
       );
       return;
     }
 
+    sessionStorage.setItem('token', response.token!);
     this.router.navigate(['/home']);
   }
 }
