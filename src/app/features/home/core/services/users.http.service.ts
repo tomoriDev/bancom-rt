@@ -3,11 +3,7 @@ import { Injectable } from '@angular/core';
 import { IUserResponse } from '../interfaces/user.interface';
 import { Observable, map } from 'rxjs';
 import { UserModel } from '../models/user.model';
-import {
-  IPostRequest,
-  IPostResponse,
-  ITablePost,
-} from '../interfaces/post.interface';
+import { IPostRequest, IPostResponse } from '../interfaces/post.interface';
 import { PostModel } from '../models/post.model';
 
 @Injectable()
