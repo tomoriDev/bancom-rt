@@ -14,6 +14,7 @@ import { UsersService } from '../../core/services/users.service';
 })
 export class ManagePostsCreateComponent {
   form: FormGroup;
+  isLoading = false;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: ITableUser,
@@ -29,12 +30,17 @@ export class ManagePostsCreateComponent {
   }
 
   registerPost() {
+    if (this.isLoading) {
+      return;
+    }
+
     const request: IPostRequest = {
       body: this.form.value.description,
       title: this.form.value.title,
       userId: this.data.id,
     };
 
+    this.isLoading = true;
     this.usersHttp.createPost(request).subscribe({
       next: (newPost) => {
         const users = this.usersService.getUsers();
@@ -42,6 +48,7 @@ export class ManagePostsCreateComponent {
         users[userIndex].posts = [newPost, ...users[userIndex].posts];
         this.closeModal();
       },
+      complete: () => {},
     });
   }
 
