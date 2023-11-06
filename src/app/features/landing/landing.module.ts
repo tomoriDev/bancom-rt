@@ -22,6 +22,7 @@ import { CoreComponentsModule } from 'src/app/core/components/core-components.mo
     LandingRoutingModule,
     LandingNavbarComponent,
     CoreComponentsModule,
+    NgOptimizedImage
   ],
   providers: [NgOptimizedImage],
 })
