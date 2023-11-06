@@ -36,7 +36,7 @@ app-core-button {
 @media screen and (max-width: $breakpoint-sm) {
   .login {
     &__form {
-      width: 360px;
+      width: 300px;
       display: flex;
       flex-direction: column;
       text-align: left;
@@ -46,7 +46,7 @@ app-core-button {
       font-weight: 700;
     }
     &__buttons {
-      margin-top: 60%;
+      margin-top: 50%;
     }
   }
 }
